@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Concesionaria de Autos del Sur</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-light" data-bs-theme="blue">
+        <div class="container-fluid">
+        <a class="navbar-brand" href="cotizar.html">Concesionaria de Autos de Sur</a>
+        <div class="collapse navbar-collapse" id="navbarColor03">
+        <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+            <a class="nav-link active" href="contabilidad.html">Contabilidad
+            </a>
+        </ul>
+        </div>
+    </div>
+    </nav>
+    <header style="background-color: rgb(150, 220, 250);">
+        <h2 class="text-center color: blue">Contabilidad "Concesionaria Autos del Sur"</h2>
+    <form id="rolPagos">
+    <div class="form-group">
+        <label for="input-empleado">Nombre del Empleado:</label>
+        <input type="text" class="form-control" id="input-empleado" required>
+    </div>
+    <div class="form-group">
+        <label for="input-cargo">Cargo del Empleado:</label>
+        <select class="form-control" id="input-cargo">
+            <option value="administrativo">Administrativo</option>
+            <option value="supervisor">Supervisor</option>
+            <option value="operario">Operario</option>
+            <option value="control_calidad">Control de Calidad</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="input-horasExtras">Horas Extras Trabajadas:</label>
+        <input type="number" class="form-control" id="input-horasExtras">
+    </div>
+        <button type="submit" class="btn btn-primary">Generar Rol de Pagos</button>
+    </form>
+
+    <div id="rolPagosResult" class="mt-4"></div>
+    </div>
+</header>
+    </header>
+    <header style="background-color: rgb(230, 230, 230);">
+        
+            <script src="js/contabilidad.js"></script>
+</body>
+</html>
